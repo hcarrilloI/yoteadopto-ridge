@@ -5,6 +5,7 @@
     <!--Nombre de la pagina en la pestaña -->
     <head>
     <!--Tipos de codigo o letras para usar: charset= "UTF-8"-->
+    <link rel="stylesheet" href="./style.css"/>
     <style>
         /* http://meyerweb.com/eric/tools/css/reset/
   v2.0 | 20110126
@@ -55,6 +56,24 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+* {
+    box-sizing: border-box;
+}
+nav{
+    display:none;
+}
+header{
+    position:fixed;
+    width: 100%;
+    padding: 20px;
+}
+header i:first-child{
+    font-size: 22px;
+}
+header i:last-child{
+    font-size: 26px;
+    float:right;
+}
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, minimum-scale=1">
@@ -63,7 +82,8 @@ table {
     <!--Lo que el usuario ve -->
     <body>
      <!--Menu de navegacion -->
-     <header style="display:none;">
+     <header>
+         <i class="yta yta-menu_icon"></i>
          <!--Listado de opciones del menu en orden-->
          <nav>
              <!--Titulo Principal-->
@@ -79,11 +99,12 @@ table {
                  <li><a href="#">Testimonios </a></li>
              </ul>
          </nav>
+         <i class="yta yta-yta_icon-white"></i>
      </header>
      <!--Main todo lo importante del la programacion -->
      <main>
          <section style="background-image: url(./img/bg-home_320.jpg) ; height: 600px;background-size: cover;
-         background-position: center center;">
+         background-position: center center; display:flex; align-items: center; justify-content: center; height:100vh;">
              <!--Titulo principal de la pagina Home -->
              <svg width="200" height="200" aria-labelledby="home-title home-desc">
                  <title id="home-title">Yo Te Adopto</title>
