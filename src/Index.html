@@ -6,12 +6,107 @@
     <head>
     <!--Tipos de codigo o letras para usar: charset= "UTF-8"-->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, minimum-scale=1">
     <title> ¡Bienvenidos a yo te adopto! </title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+            /* http://meyerweb.com/eric/tools/css/reset/ 
+            v2.0 | 20110126
+            License: none (public domain)
+            */
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, em, img, ins, kbd, q, s, samp,
+            small, strike, strong, sub, sup, tt, var,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, embed, 
+            figure, figcaption, footer, header, hgroup, 
+            menu, nav, output, ruby, section, summary,
+            time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+            /* HTML5 display-role reset for older browsers */
+            article, aside, details, figcaption, figure, 
+            footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+            body {
+                line-height: 1;
+            }
+            ol, ul {
+                list-style: none;
+            }
+            blockquote, q {
+                quotes: none;
+            }
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content: '';
+                content: none;
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            nav {
+                display: none;
+            }
+
+            header {
+                position: fixed;
+                width:100%;
+                padding: 20px;
+                z-index: 1;
+            }
+
+            header i:first-child {
+                font-size:22px;
+            }
+
+            header i:last-child {
+                font-size: 26px;
+                float: right;
+            }
+            
+            .home {
+            background-image: url(./img/bg-home_320.jpg);
+             height: 600px;
+              background-size: cover;
+               background-position: center;
+                display: flex;
+                 align-items: center;
+                 justify-content: center;
+                  height: 100vh;
+                  position: relative;
+                }
+
+            .home-slide {
+                position: absolute;
+                bottom: 20px;
+                font-size: 50px;
+            }
+
+        </style>
     </head>
     <!--Lo que el usuario ve -->
     <body>
      <!--Menu de navegacion -->
      <header>
+         <i class="yta yta-menu_icon"></i>
          <!--Listado de opciones del menu en orden-->
          <nav>
              <!--Titulo Principal-->
@@ -27,14 +122,19 @@
                  <li><a href="#">Testimonios </a></li>
              </ul>
          </nav>
+         <i class="yta yta-yta_icon-white"></i>
      </header>
      <!--Main todo lo importante del la programacion -->
      <main>
-         <section>
+         <section class="home">
              <!--Titulo principal de la pagina Home -->
-             <h1> Yo Te adopto</h1>
-             <p>Hogar para Nuestros Amigos</p>
-         </section>
+             <svg width="200" height="200" aria-labelledby="home-title home-desc">
+                 <title id="home-title">Yo te adopto</title>
+                 <desc id="home-desc">Hogares para nuestros amigos</desc>
+                    <image xlink:href="./img/isologo.svg" width="200" height="200"></image>
+            </svg>
+            <i class="home-slide yta yta-slide_icon-up-down"></i>
+        </section>
          <!--Subtitulo de la pagina -->
          <!--Seccion de Menu de mascotas -->
          <section>
