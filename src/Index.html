@@ -66,6 +66,7 @@ header{
     position:fixed;
     width: 100%;
     padding: 20px;
+    z-index: 1;
 }
 header i:first-child{
     font-size: 22px;
@@ -73,6 +74,22 @@ header i:first-child{
 header i:last-child{
     font-size: 26px;
     float:right;
+}
+.home
+{
+    background-image: url(./img/bg-home_320.jpg) ; 
+    height: 600px;background-size: cover;
+    background-position: center center;
+    display:flex; 
+    align-items: center; 
+    justify-content: center; 
+    height:100vh;
+    position: relative;
+}
+.home-slide{
+    position:absolute;
+    bottom: 20px;
+    font-size: 50px;
 }
     </style>
     <meta charset="utf-8">
@@ -103,20 +120,20 @@ header i:last-child{
      </header>
      <!--Main todo lo importante del la programacion -->
      <main>
-         <section style="background-image: url(./img/bg-home_320.jpg) ; height: 600px;background-size: cover;
-         background-position: center center; display:flex; align-items: center; justify-content: center; height:100vh;">
+         <section class="home">
              <!--Titulo principal de la pagina Home -->
              <svg width="200" height="200" aria-labelledby="home-title home-desc">
                  <title id="home-title">Yo Te Adopto</title>
                  <desc id="home-desc">Hogares para nuestros amigos</desc>
                  <image xlink:href="./img/isologo.svg" width="200" height="200"></image>
              </svg>
+             <i class="home-slide yta yta-slide_icon-up-down"></i>
          </section>
          <!--Subtitulo de la pagina -->
          <!--Seccion de Menu de mascotas -->
          <section>
                 <!--Titulo principal de la pagina Home -->
-                <h2>Que es yo te Adopto?</h2>
+                <h2>¿Que es yo te Adopto?</h2>
                 <!--Lorem para agregar texto al azar. por si no se tiene un texto definido -->
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae magnam, perspiciatis provident nisi voluptatem sit natus beatae possimus nesciunt quibusdam sint temporibus atque quas minima id expedita laboriosam labore laudantium?</p>
             </section>
