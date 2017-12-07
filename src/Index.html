@@ -150,6 +150,7 @@
 
         * {
             box-sizing: border-box;
+            font-family: nunito;
         }
 
         nav {
@@ -159,7 +160,7 @@
         header {
             position: fixed;
             width: 100%;
-            padding: 20px;
+            padding: 38px;
             z-index: 1;
         }
 
@@ -168,7 +169,7 @@
         }
 
         header i:last-child {
-            font-size: 26px;
+            font-size: 30px;
             float: right;
         }
 
@@ -188,6 +189,34 @@
             position: absolute;
             bottom: 20px;
             font-size: 50px;
+        }
+        .aboutUs{
+            background-color: #f06252;
+            padding:38px;
+            text-align: center;   
+        }
+        .aboutUs picture{
+            position: relative;
+        }
+        .aboutUs picture svg{
+            position:absolute;
+            bottom:0;
+            right:0;
+            width: 100px;
+            height: 100px;
+        }
+        h1, h2, h3, h4, h5, h6{
+            font-family: maaxRounded;
+            font-weight: bold;
+        }
+        .aboutUs h2{
+            color: #553457;
+            font-size: 29px;
+            margin: 10px auto;
+        }
+        .aboutUs p{
+            text-align: left;
+            color: white;
         }
     </style>
 </head>
@@ -238,9 +267,21 @@
         </section>
         <!--Subtitulo de la pagina -->
         <!--Seccion de Menu de mascotas -->
-        <section>
+        <section class="aboutUs">
             <!--Titulo principal de la pagina Home -->
-            <h2>Que es yo te Adopto?</h2>
+            <picture>
+                <img 
+                     srcset="./img/aboutus-img_1x.png,
+                             ./img/aboutus-img_2x.png 2x,
+                             ./img/aboutus-img_3x.png 3x
+                             "
+                     src="./img/aboutus-img_2x.png" 
+                     alt="">
+                <svg >
+                    <image xlink:href="./img/isologo.svg" width="100" height="100"></image>
+                </svg>
+            </picture>
+            <h2>¿Qué es yo te Adopto?</h2>
             <!--Lorem para agregar texto al azar. por si no se tiene un texto definido -->
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae magnam, perspiciatis provident nisi voluptatem
                 sit natus beatae possimus nesciunt quibusdam sint temporibus atque quas minima id expedita laboriosam labore
