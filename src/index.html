@@ -322,6 +322,44 @@
         .adopt-footer i{
             font-size: 22px;
         }
+        .testimony{
+            background-color: #553457;
+            text-align: center;
+            color: white;
+            padding: 80px 60px;
+            text-transform: uppercase;
+        }
+        .testimony h2{
+            display: none;
+        }
+        .testimony blockquote{
+            font-size: 20px;
+            line-height: 1.4;
+        }
+        b{
+            font-weight: bold;
+        }
+        .testimony blockquote p{
+            position: relative;
+            margin-bottom: 10px;
+        }
+        
+        .testimony blockquote p:before{
+            content: "\e909";
+            font-family: yta;
+            position: absolute;
+            bottom: 100%;
+            color: #ffc85e;
+        }
+        .testimony blockquote p:after{
+            content: "\e908";
+            font-family: yta;
+            position: absolute;
+            bottom: 0%;
+            margin-left: 5px;
+            bottom: -5px;
+            color: #ffc85e;
+        }
     </style>
 </head>
 <!--Lo que el usuario ve -->
@@ -431,12 +469,16 @@
             </div>
         </section>
         <!--Seccion de Testimonios -->
-        <section>
+        <section class="testimony">
             <!--Titulo -->
             <h2>Testimonios</h2>
             <!-- Un texto especifico, o frase importante -->
             <blockquote>
-                La grandeza de una nación y su progreso moral puede ser juzgado por la forma en que sus animales son tratado -MAHATMA GANDHI
+                <p>
+                    La grandeza de una nación y su progreso moral puede ser juzgado por la forma en que sus animales son tratado
+                </p>
+                 <b>—<br/>MAHATMA GANDHI</b>
+
             </blockquote>
         </section>
         <!--Seccion de Campañas de vacunación -->
